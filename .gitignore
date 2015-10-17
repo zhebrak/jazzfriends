@@ -1,6 +1,6 @@
 db.sqlite3
 .idea/*
-mazel*
+mazel-template/*
 jazz.conf
 app/local_settings.py
 env/*
