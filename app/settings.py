@@ -5,11 +5,11 @@ import os
 
 
 config = ConfigParser.ConfigParser()
-config.read('jazz.conf')
+config.read(['jazz.conf', '/etc/jazz.conf'])
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config.get('main', 'SECRET_KEY')
-DEBUG = False
+DEBUG = True
 
 SITE_URL = 'http://jazzfriendschoir.ru'
 ALLOWED_HOSTS = ['*']
