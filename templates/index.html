@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jazz Friends — джазовый хор a capella</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}mazel/img/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ STATIC_URL }}mazel/img/favicon.png">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL }}mazel/img/favicon.png">
+
+    <!-- CSS -->
+    <link href="{{ STATIC_URL }}mazel/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/plugin/jPushMenu.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/plugin/animate.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}mazel/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+    <link href="{{ STATIC_URL }}style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body class="full-intro background--dark">
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="logo text-logo">
+                    <a href="">
+                        Jazz Friends
+                    </a>
+                </div>
+                <!--End logo-->
+
+                <!-- Navigation Menu -->
+                <nav class="navigation singlepage-nav">
+                    <ul>
+                        <li>
+                            <a class="current-ele" href="#about">О хоре</a>
+                        </li>
+
+                        <li>
+                            <a href="#concerts">Концерты</a>
+                        </li>
+                        <li>
+                            <a href="#photo">Фото</a>
+                        </li>
+                        <li>
+                            <a href="#video">Видео</a>
+                        </li>
+                        <li>
+                            <a href="#we">Мы</a>
+                        </li>
+                        <li>
+                            <a href="#contact-section">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--End Navigation Menu -->
+
+
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- Intro Section -->
+        <section class="home-slider dark-bg">
+
+            <!-- Hero Slider Section -->
+            <div class="owl-carousel fullwidth-slider white o-flow-hidden">
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ STATIC_URL }}img/choir.png');">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h5>Джазовый a capella хор</h5>
+                                <br />
+                                <h1 class="h1">Jazz Friends</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ STATIC_URL }}img/vladimir.png');">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h5>Под руководством</h5>
+                                <br />
+                                <h1 class="h1">Владимира Сидорковича</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+            </div>
+            <!-- End Hero Slider Section -->
+        </section>
+        <div class="clearfix"></div>
+        <!-- End Intro Section -->
+
+        <!--About Section-->
+        <section id="about" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="h4">О хоре</h3>
+                        <div class="spacer-15"></div>
+                        <p class="lead">Хор Московского колледжа импровизационной музыки под руководством Владимира Сидорковича на сегодняшний день представляет собой достаточно редкое для московского джазового мира явление – это большой вокальный состав, исполняющий акапельный джаз.</p>
+                    </div>
+                </div>
+                <div class="row mt-80">
+                    <div class="col-md-4 mb-30">
+                        <img src="{{ STATIC_URL }}img/choir_about.jpg" alt="" />
+                    </div>
+                    <div class="col-md-8 mb-30">
+                        <p>
+                            Хотя композиции, которые вокалисты выбирают для себя, нельзя строго отнести только лишь к джазовой музыке в традиционном понимании – в репертуаре хора присутствуют и характерные для подобных составов госпелы и рождественские гимны, а также блюзовые произведения и даже неожиданные аранжировки известных песен – например, из репертуара группы Beatles.
+                        </p>
+                        <p>
+                            Хор существует немногим больше двух лет, и его состав (как и полагается юному коллективу) постоянно обновляется, хотя уже сформировался твердый «костяк» из молодых талантливых вокалистов – студентов Московского колледжа импровизационной музыки. Однако несмотря молодость самого коллектива и его участников, ансамбль уже ведет концертную деятельность и успел неоднократно и весьма успешно поучаствовать в престижных и авторитетных молодежных джазовых фестивалях.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section-->
+
+        <hr />
+
+        <!-- Blog Section -->
+        <section id="video" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <h3 class="float-left float-none-xs">Видео</h3>
+                <div class="clearfix"></div>
+                <div class="spacer-60"></div>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
+                                    <!-- MP4 source must come first for iOS -->
+                                    <source type="video/mp4" src="media/video1.mp4" />
+                                    <!-- WebM for Firefox 4 and Opera -->
+                                    <source type="video/webm" src="media/video1.webm" />
+                                    <!-- OGG for Firefox 3 -->
+                                    <source type="video/ogg" src="media/video1.ogv" />
+                                </video>
+                            </div>
+                            <div class="post-meta"><span>ММДМ,</span> <span>30 апреля 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">Международный день джаза</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
+                                    <!-- MP4 source must come first for iOS -->
+                                    <source type="video/mp4" src="media/video1.mp4" />
+                                    <!-- WebM for Firefox 4 and Opera -->
+                                    <source type="video/webm" src="media/video1.webm" />
+                                    <!-- OGG for Firefox 3 -->
+                                    <source type="video/ogg" src="media/video1.ogv" />
+                                </video>
+                            </div>
+                            <div class="post-meta"><span>Клуб Алексея Козлова,</span> <span>24 октября 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">VI Международный фестиваль Radio 1jazz.ru</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
+                                    <!-- MP4 source must come first for iOS -->
+                                    <source type="video/mp4" src="media/video1.mp4" />
+                                    <!-- WebM for Firefox 4 and Opera -->
+                                    <source type="video/webm" src="media/video1.webm" />
+                                    <!-- OGG for Firefox 3 -->
+                                    <source type="video/ogg" src="media/video1.ogv" />
+                                </video>
+                            </div>
+                            <div class="post-meta"><span>Клуб Академический,</span> <span>14 мая 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">Концерт</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Section -->
+
+         <hr />
+
+        <!-- Team -->
+        <section id="we" class="ptb ptb-sm-80">
+            <div class="container text-center">
+                <h3>Мы</h3>
+                <div class="spacer-60"></div>
+
+                <!--Team Carousel -->
+                <div class="row">
+                    <div class="owl-carousel team-carousel nf-carousel-theme">
+
+                        <div class="item">
+                            <div class="team-item nf-col-padding">
+                                <div class="team-item-img">
+                                    <img src="{{ STATIC_URL }}img/we_vladimir.png" alt="" />
+                                    <div class="team-item-detail">
+                                        <div class="team-item-detail-inner light-color">
+                                            <h5>Владимир Сидоркович</h5>
+                                            <p>The One And Only</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item-info">
+                                    <h5>Владимир Сидоркович</h5>
+                                    <p class="">Руководитель</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-item nf-col-padding">
+                                <div class="team-item-img">
+                                    <img src="{{ STATIC_URL }}img/we_mariak.png" alt="" />
+                                    <div class="team-item-detail">
+                                        <div class="team-item-detail-inner light-color">
+                                            <h5>Квартального Мария</h5>
+                                            <p>Без скрипки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item-info">
+                                    <h5>Мария Квартальнова</h5>
+                                    <p class="">Сопрано</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-item nf-col-padding">
+                                <div class="team-item-img">
+                                    <img src="{{ STATIC_URL }}img/we_diana.png" alt="" />
+                                    <div class="team-item-detail">
+                                        <div class="team-item-detail-inner light-color">
+                                            <h5>Диана Кравцова</h5>
+                                            <p>В детстве слушала Селин Дион</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item-info">
+                                    <h5>Диана Кравцова</h5>
+                                    <p class="">Альт</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="team-item nf-col-padding">
+                                <div class="team-item-img">
+                                    <img src="{{ STATIC_URL }}mazel/img/team/people-4.jpg" alt="" />
+                                    <div class="team-item-detail">
+                                        <div class="team-item-detail-inner light-color">
+                                            <h5>Michael Lee</h5>
+                                            <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
+                                            <ul class="social">
+                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                                <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item-info">
+                                    <h5>Michael Lee</h5>
+                                    <p class="">Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Team Carousel --->
+            </div>
+        </section>
+        <!-- End Team -->
+
+        <hr/>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="ptb ptb-sm-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3>Напишите нам</h3>
+                    </div>
+                </div>
+                <div class="spacer-75"></div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <!-- Contact FORM -->
+                        <form class="contact-form" id="contact" role="form">
+
+                            <!-- IF MAIL SENT SUCCESSFULLY -->
+                            <h6 class="successContent">
+                                <i class="fa fa-check left" style="color: #5cb45d;"></i>Ваше сообщение успешно отправлено
+                            </h6>
+                            <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+                            <!-- MAIL SENDING UNSUCCESSFULL -->
+                            <h6 class="errorContent">
+                                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Пожалуйста, проверьте правильность заполнения формы!
+                            </h6>
+                            <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+                            <div class="form-field-wrapper">
+                                <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Ваше имя" required>
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Обратный контакт" required>
+                            </div>
+
+                            <div class="form-field-wrapper">
+                                <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Сообщение" required></textarea>
+                            </div>
+
+                            <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Отправить</button>
+                        </form>
+                        <!-- END Contact FORM -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+
+        <hr />
+
+        <section id="contact-info" class="ptb ptb-sm-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-box-left">
+                            <div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
+                            <h6>Адрес</h6>
+                            <p>
+                                Андропова пр-т, 48, стр. 2, Москва
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-box-left">
+                            <div class="contact-icon-left"><i class="ion ion-ios-telephone"></i></div>
+                            <h6>Телефон</h6>
+                            <p>
+                                <span>1234567890</span><br />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-box-left">
+                            <div class="contact-icon-left"><i class="ion ion-ios-email"></i></div>
+                            <h6>Email</h6>
+                            <p>
+                                <a href="mailto:jazzfriends@gmail.com">jazzfriends@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+        <footer class="footer pt-80">
+
+            <!-- Copyright Bar -->
+            <section class="copyright pb-60">
+                <div class="container">
+                    <p class="">
+                        &copy; 2015 <a href=""><b>Jazz Friends</b></a><br/>via Alexander Zhebrak
+                    </p>
+                </div>
+            </section>
+            <!-- End Copyright Bar -->
+
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+    <script src="{{ STATIC_URL }}mazel/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.easing.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/background-check.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jPushMenu.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/mediaelement-and-player.min.js"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/theme.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/navigation.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/plugin/jquery.singlePageNav.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}mazel/js/contact-form.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}mazel/js/map.js"></script>
+
+    <script type="text/javascript">
+        //  Onepage Nav Elements
+        $('.singlepage-nav').singlePageNav({
+            offset: 0,
+            filter: ':not(.nav-external)',
+            updateHash: true,
+            currentClass: 'current-ele',
+            easing: 'swing',
+            speed: 750,
+            beforeStart: function () {
+                console.log('begin scrolling');
+            },
+            onComplete: function () {
+                console.log('done scrolling');
+            }
+        });
+    </script>
+
+</body>
+</html>

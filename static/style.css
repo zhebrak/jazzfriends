@@ -1,0 +1,9 @@
+.header .logo a, .header.sticky .logo a {
+    width: 300px;
+}
+
+.text-logo {
+    width: 300px;
+    font-size: 30px;
+    font-weight: bold;
+}
