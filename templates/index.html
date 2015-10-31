@@ -152,10 +152,43 @@
 
         <hr />
 
+         <!-- Contant Slider Section -->
+        <section id="concert" class="wow ptb-sm-80 dark-bg">
+            <div class="container text-center">
+                <h3>Концерты</h3>
+                {% for concert in concert_list %}
+                    <div class="concert-item">
+                        <div class="concert-image">
+                            <img src="{% if concert.image %}{{ concert.image }}{% else %}{{ STATIC_URL}}/img/choir_about.jpg{% endif %}"/>
+                        </div>
+                        <div class="concert-info-block">
+                            <div class="concert-time">
+                                <h4>{{ concert.show_time|date:"d / m" }}</h4>
+                            </div>
+                            <div class="concert-title">
+                                <h4>{{ concert.title }}</h4>
+                            </div>
+                            <div class="concert-location">
+                                <span>{{ concert.location }}</span>
+                            </div>
+                            {% if concert.site %}
+                                <div class="concert-site">
+                                    {{ concert.site }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <!-- End Contain Slider Section -->
+
+        <hr/>
+
         <!-- Blog Section -->
         <section id="video" class="wow fadeIn ptb ptb-sm-80">
-            <div class="container">
-                <h3 class="float-left float-none-xs">Видео</h3>
+            <div class="container text-center">
+                <h3>Видео</h3>
                 <div class="clearfix"></div>
                 <div class="spacer-60"></div>
                 <div class="row">
