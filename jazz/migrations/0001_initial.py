@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('file_type', models.SmallIntegerField(verbose_name='\u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435', choices=[(0, '\u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430')])),
                 ('name', models.CharField(max_length=50, null=True, verbose_name='\u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435', blank=True)),
+                ('group', models.CharField(max_length=20, null=True, verbose_name='\u0433\u0440\u0443\u043f\u043f\u0430', blank=True)),
                 ('file', models.FileField(upload_to=b'/attachments/', verbose_name='\u0444\u0430\u0439\u043b')),
             ],
             options={

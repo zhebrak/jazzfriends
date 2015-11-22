@@ -8,22 +8,23 @@
     font-weight: bold;
 }
 
-#concert {
+.concert {
     padding-top: 50px;
     padding-bottom: 80px;
 }
 
-#concert h3 {
+.concert h3 {
     margin-bottom: 40px;
 }
 
-#concert .container {
+.concert .container {
     padding: 0;
 }
 
 .concert-item {
     display: inline-block;
-    width: 45%;
+    width: 30%;
+    vertical-align: top;
 }
 
 .concert-image {
@@ -35,4 +36,54 @@
 .concert-info-block {
     display: inline-block;
     vertical-align: middle;
+}
+
+#we {
+    padding-top: 20px;
+}
+
+#we .lead {
+    font-size: 20px;
+}
+
+#we p {
+    font-size: 16px;
+}
+
+.concert .concert-site {
+    margin-top: 10px;
+}
+
+.concert .concert-site a {
+    color: white;
+}
+
+.concert .concert-site a:hover {
+    color: #e6ae49;
+}
+
+#photo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#photo img {
+    height: 630px;
+}
+
+#photo .photo-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#contact-info, #contact {
+    padding-top: 20px;
+}
+
+.copyright {
+    padding-bottom: 30px;
+}
+
+.footer {
+    padding-top: 50px;
 }

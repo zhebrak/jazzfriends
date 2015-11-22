@@ -1992,6 +1992,7 @@ header.sticky .navigation a.current-ele {
         color: #fff;
         font-size: 18px;
         line-height: 0;
+        overflow:hidden;
     }
 
         .side-menu .menu-close:hover {

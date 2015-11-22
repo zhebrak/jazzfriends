@@ -14,21 +14,21 @@ from jazz.models import Concert, Attachment
 def index(request):
     concert_list = Concert.objects.filter(
         show_time__gte=datetime.today()
-    ).order_by('show_time')[:2]
+    ).order_by('show_time')[:3]
 
-    print concert_list
-
-    choir_photo_list = Attachment.objects.filter(
-        group='choir_photo'
+    singers_list = Attachment.objects.filter(
+        group='team'
     ).order_by('?')
-    singers_photo_list = Attachment.objects.filter(
-        group='singers_photo'
+
+    photo_list = Attachment.objects.filter(
+        group="photo"
     ).order_by('?')
 
     context = {
         'concert_list': concert_list,
-        'choir_photo_list': choir_photo_list,
-        'singers_photo_list': singers_photo_list
+        'singers_list': singers_list,
+        'photo_list': photo_list,
+        'concert_item_width': int(100.0 / len(concert_list) - 5)
     }
 
     return render_to_response(
@@ -45,6 +45,8 @@ def feedback(request):
             result = 'OK'
         else:
             result = 'Error'
+
+        print result
 
         return json.dumps({
             'result': result

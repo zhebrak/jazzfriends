@@ -10,8 +10,8 @@ class ConcertAdmin(admin.ModelAdmin):
 
 
 class AttachmentAdmin(admin.ModelAdmin):
-    list_display = ['name', 'file_type']
-    list_filter = ['file_type']
+    list_display = ['group', 'name', 'file_type']
+    list_filter = ['file_type', 'group']
 
 
 class FeedbackAdmin(admin.ModelAdmin):

@@ -697,3 +697,9 @@ function jqueryUi() {
 
 
 
+// ---------------------------------
+// Extra Jquery
+// ---------------------------------
+$(window).load(function () {
+    $(".all-demos-link").attr("href", "../demo.html");
+});

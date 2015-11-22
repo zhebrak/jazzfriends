@@ -10,7 +10,6 @@ class Concert(models.Model):
 
     site = models.URLField(blank=True, null=True, verbose_name=u'сайт')
     description = models.TextField(blank=True, null=True, verbose_name=u'описание')
-    # image = models.ImageField(blank=True, null=True, verbose_name=u'картинка')
 
     class Meta:
         verbose_name = u'Концерт'
@@ -27,7 +26,7 @@ class Attachment(models.Model):
     file_type = models.SmallIntegerField(choices=type_choices, verbose_name=u'название')
     name = models.CharField(max_length=50, blank=True, null=True, verbose_name=u'название')
     group = models.CharField(max_length=20, blank=True, null=True, verbose_name=u'группа')
-    file = models.FileField(verbose_name=u'файл', upload_to='/attachments/')
+    file = models.FileField(verbose_name=u'файл', upload_to='attachments/')
 
     class Meta:
         verbose_name = u'Документ'

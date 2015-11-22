@@ -10,9 +10,9 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
     <!-- Favicone Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}mazel/img/favicon.ico">
-    <link rel="icon" type="image/png" href="{{ STATIC_URL }}mazel/img/favicon.png">
-    <link rel="apple-touch-icon" href="{{ STATIC_URL }}mazel/img/favicon.png">
+{#    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}mazel/img/favicon.ico">#}
+{#    <link rel="icon" type="image/png" href="{{ STATIC_URL }}mazel/img/favicon.png">#}
+{#    <link rel="apple-touch-icon" href="{{ STATIC_URL }}mazel/img/favicon.png">#}
 
     <!-- CSS -->
     <link href="{{ STATIC_URL }}mazel/css/style.css" rel="stylesheet" type="text/css" />
@@ -24,7 +24,8 @@
     <link href="{{ STATIC_URL }}mazel/css/jquery-ui.css" rel="stylesheet" type="text/css" />
 
     <link href="{{ STATIC_URL }}style.css" rel="stylesheet" type="text/css" />
-
+    <script src="{{ STATIC_URL }}mazel/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}script.js"></script>
 
 </head>
 
@@ -61,19 +62,19 @@
                         </li>
 
                         <li>
-                            <a href="#concerts">Концерты</a>
-                        </li>
-                        <li>
-                            <a href="#photo">Фото</a>
+                            <a href="#concert">Концерты</a>
                         </li>
                         <li>
                             <a href="#video">Видео</a>
                         </li>
                         <li>
+                            <a href="#photo">Фото</a>
+                        </li>
+                        <li>
                             <a href="#we">Мы</a>
                         </li>
                         <li>
-                            <a href="#contact-section">Контакты</a>
+                            <a href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -91,7 +92,7 @@
 
             <!-- Hero Slider Section -->
             <div class="owl-carousel fullwidth-slider white o-flow-hidden">
-                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ STATIC_URL }}img/choir.png');">
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ MEDIA_URL }}attachments/slider_1.jpg');">
                     <!-- Content -->
                     <div class="full-cap-wraper overlay-dark80 light-color">
                         <div class="content-caption light-color">
@@ -104,7 +105,33 @@
                     </div>
                     <!-- End Content -->
                 </div>
-                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ STATIC_URL }}img/vladimir.png');">
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ MEDIA_URL }}attachments/slider_2.jpg');">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h5>Под руководством</h5>
+                                <br />
+                                <h1 class="h1">Владимира Сидорковича</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ MEDIA_URL }}attachments/slider_3.jpg');">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h5>Джазовый a capella хор</h5>
+                                <br />
+                                <h1 class="h1">Jazz Friends</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+                <div class="item bg-img parallax parallax-section1" style="background-image: url('{{ MEDIA_URL }}attachments/slider_4.jpg');">
                     <!-- Content -->
                     <div class="full-cap-wraper overlay-dark80 light-color">
                         <div class="content-caption light-color">
@@ -133,77 +160,71 @@
                         <p class="lead">Хор Московского колледжа импровизационной музыки под руководством Владимира Сидорковича на сегодняшний день представляет собой достаточно редкое для московского джазового мира явление – это большой вокальный состав, исполняющий акапельный джаз.</p>
                     </div>
                 </div>
-                <div class="row mt-80">
-                    <div class="col-md-4 mb-30">
-                        <img src="{{ STATIC_URL }}img/choir_about.jpg" alt="" />
-                    </div>
-                    <div class="col-md-8 mb-30">
-                        <p>
+                <div class="spacer-15"></div>
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="{{ MEDIA_URL }}attachments/choir_about.jpg" alt="" />
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="spacer-30"></div>
+                        <p class="lead">
                             Хотя композиции, которые вокалисты выбирают для себя, нельзя строго отнести только лишь к джазовой музыке в традиционном понимании – в репертуаре хора присутствуют и характерные для подобных составов госпелы и рождественские гимны, а также блюзовые произведения и даже неожиданные аранжировки известных песен – например, из репертуара группы Beatles.
                         </p>
-                        <p>
-                            Хор существует немногим больше двух лет, и его состав (как и полагается юному коллективу) постоянно обновляется, хотя уже сформировался твердый «костяк» из молодых талантливых вокалистов – студентов Московского колледжа импровизационной музыки. Однако несмотря молодость самого коллектива и его участников, ансамбль уже ведет концертную деятельность и успел неоднократно и весьма успешно поучаствовать в престижных и авторитетных молодежных джазовых фестивалях.
-                        </p>
+{#                        <p>#}
+{#                            Хор существует немногим больше двух лет, и его состав (как и полагается юному коллективу) постоянно обновляется, хотя уже сформировался твердый «костяк» из молодых талантливых вокалистов – студентов Московского колледжа импровизационной музыки. Однако несмотря молодость самого коллектива и его участников, ансамбль уже ведет концертную деятельность и успел неоднократно и весьма успешно поучаствовать в престижных и авторитетных молодежных джазовых фестивалях.#}
+{#                        </p>#}
                     </div>
-                </div>
+{#                </div>#}
             </div>
         </section>
         <!-- End About Section-->
 
         <hr />
 
-         <!-- Contant Slider Section -->
-        <section id="concert" class="wow ptb-sm-80 dark-bg">
-            <div class="container text-center">
-                <h3>Концерты</h3>
-                {% for concert in concert_list %}
-                    <div class="concert-item">
-                        <div class="concert-image">
-                            <img src="{% if concert.image %}{{ concert.image }}{% else %}{{ STATIC_URL}}/img/choir_about.jpg{% endif %}"/>
-                        </div>
-                        <div class="concert-info-block">
-                            <div class="concert-time">
-                                <h4>{{ concert.show_time|date:"d / m" }}</h4>
-                            </div>
-                            <div class="concert-title">
-                                <h4>{{ concert.title }}</h4>
-                            </div>
-                            <div class="concert-location">
-                                <span>{{ concert.location }}</span>
-                            </div>
-                            {% if concert.site %}
-                                <div class="concert-site">
-                                    {{ concert.site }}
+        {% if concert_list %}
+            <span id="concert"></span>
+             <!-- Contant Slider Section -->
+            <section id="fake-convert-id" class="wow concert fadeIn ptb-sm-80 dark-bg">
+                <div class="container text-center">
+                    <h3>Концерты</h3>
+                    {% for concert in concert_list %}
+                        <div class="concert-item" style="width: {{ concert_item_width }}%;">
+                            <div class="concert-info-block">
+                                <div class="concert-time">
+                                    <h4>{{ concert.show_time|date:"d / m" }}</h4>
                                 </div>
-                            {% endif %}
+                                <div class="concert-title">
+                                    <h4>{{ concert.title }}</h4>
+                                </div>
+                                <div class="concert-location">
+                                    <span>{{ concert.location }}</span>
+                                </div>
+                                {% if concert.site %}
+                                    <div class="concert-site">
+                                        <a href="{{ concert.site }}">{{ concert.site|cut:"http://"|cut:"https://"|cut:"/" }}</a>
+                                    </div>
+                                {% endif %}
+                            </div>
                         </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
-        <!-- End Contain Slider Section -->
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End Contain Slider Section -->
+            <hr/>
+        {% endif %}
 
-        <hr/>
-
-        <!-- Blog Section -->
+        <!-- Video Section -->
         <section id="video" class="wow fadeIn ptb ptb-sm-80">
             <div class="container text-center">
                 <h3>Видео</h3>
                 <div class="clearfix"></div>
-                <div class="spacer-60"></div>
+                <div class="spacer-45"></div>
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
                         <div class="blog-post">
                             <div class="post-media">
-                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
-                                    <!-- MP4 source must come first for iOS -->
-                                    <source type="video/mp4" src="media/video1.mp4" />
-                                    <!-- WebM for Firefox 4 and Opera -->
-                                    <source type="video/webm" src="media/video1.webm" />
-                                    <!-- OGG for Firefox 3 -->
-                                    <source type="video/ogg" src="media/video1.ogv" />
-                                </video>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UoiZfChVq78" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="post-meta"><span>ММДМ,</span> <span>30 апреля 2015</span></div>
                             <div class="post-header">
@@ -215,14 +236,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
                         <div class="blog-post">
                             <div class="post-media">
-                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
-                                    <!-- MP4 source must come first for iOS -->
-                                    <source type="video/mp4" src="media/video1.mp4" />
-                                    <!-- WebM for Firefox 4 and Opera -->
-                                    <source type="video/webm" src="media/video1.webm" />
-                                    <!-- OGG for Firefox 3 -->
-                                    <source type="video/ogg" src="media/video1.ogv" />
-                                </video>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UoiZfChVq78" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="post-meta"><span>Клуб Алексея Козлова,</span> <span>24 октября 2015</span></div>
                             <div class="post-header">
@@ -234,14 +248,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
                         <div class="blog-post">
                             <div class="post-media">
-                                <video class="video" style="width: 100%;" width="" height="" preload="auto" poster="media/echo-hereweare.jpg" controls="controls">
-                                    <!-- MP4 source must come first for iOS -->
-                                    <source type="video/mp4" src="media/video1.mp4" />
-                                    <!-- WebM for Firefox 4 and Opera -->
-                                    <source type="video/webm" src="media/video1.webm" />
-                                    <!-- OGG for Firefox 3 -->
-                                    <source type="video/ogg" src="media/video1.ogv" />
-                                </video>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UoiZfChVq78" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="post-meta"><span>Клуб Академический,</span> <span>14 мая 2015</span></div>
                             <div class="post-header">
@@ -257,98 +264,43 @@
 
          <hr />
 
+        <!-- Item1 Slider-->
+        <section id="photo" class="ptb ptb-sm-80">
+            <div class="container">
+                <h3 class="text-center">Фото</h3>
+                <div class="spacer-30"></div>
+                <div class="owl-carousel item1-carousel nf-carousel-theme o-flow-hidden">
+                     {% for photo in photo_list %}
+                        <div class="item">
+                            <img alt="" src="{{ photo.file.url }}" />
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- End Item1 Slider -->
+
+        <hr />
+
         <!-- Team -->
         <section id="we" class="ptb ptb-sm-80">
             <div class="container text-center">
                 <h3>Мы</h3>
-                <div class="spacer-60"></div>
-
-                <!--Team Carousel -->
-                <div class="row">
-                    <div class="owl-carousel team-carousel nf-carousel-theme">
-
-                        <div class="item">
-                            <div class="team-item nf-col-padding">
-                                <div class="team-item-img">
-                                    <img src="{{ STATIC_URL }}img/we_vladimir.png" alt="" />
-                                    <div class="team-item-detail">
-                                        <div class="team-item-detail-inner light-color">
-                                            <h5>Владимир Сидоркович</h5>
-                                            <p>The One And Only</p>
-                                        </div>
+                <div class="spacer-30"></div>
+                <div class="container-masonry nf-col-4">
+                    {% for singer in singers_list %}
+                        <div class="nf-item">
+                            <div class="item-box">
+                                <img alt="1" src="{{ singer.file.url }}" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h6 class="white">{{ singer.name }}</h6>
                                     </div>
                                 </div>
-                                <div class="team-item-info">
-                                    <h5>Владимир Сидоркович</h5>
-                                    <p class="">Руководитель</p>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="item">
-                            <div class="team-item nf-col-padding">
-                                <div class="team-item-img">
-                                    <img src="{{ STATIC_URL }}img/we_mariak.png" alt="" />
-                                    <div class="team-item-detail">
-                                        <div class="team-item-detail-inner light-color">
-                                            <h5>Квартального Мария</h5>
-                                            <p>Без скрипки</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-item-info">
-                                    <h5>Мария Квартальнова</h5>
-                                    <p class="">Сопрано</p>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="item">
-                            <div class="team-item nf-col-padding">
-                                <div class="team-item-img">
-                                    <img src="{{ STATIC_URL }}img/we_diana.png" alt="" />
-                                    <div class="team-item-detail">
-                                        <div class="team-item-detail-inner light-color">
-                                            <h5>Диана Кравцова</h5>
-                                            <p>В детстве слушала Селин Дион</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-item-info">
-                                    <h5>Диана Кравцова</h5>
-                                    <p class="">Альт</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="team-item nf-col-padding">
-                                <div class="team-item-img">
-                                    <img src="{{ STATIC_URL }}mazel/img/team/people-4.jpg" alt="" />
-                                    <div class="team-item-detail">
-                                        <div class="team-item-detail-inner light-color">
-                                            <h5>Michael Lee</h5>
-                                            <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
-                                            <ul class="social">
-                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                                <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-item-info">
-                                    <h5>Michael Lee</h5>
-                                    <p class="">Photographer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    {% endfor %}
                 </div>
-                <!--End Team Carousel --->
             </div>
         </section>
         <!-- End Team -->
@@ -356,7 +308,7 @@
         <hr/>
 
         <!-- Contact Section -->
-        <section id="contact-section" class="ptb ptb-sm-80">
+        <section id="contact" class="ptb ptb-sm-80">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
@@ -367,20 +319,7 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <!-- Contact FORM -->
-                        <form class="contact-form" id="contact" role="form">
-
-                            <!-- IF MAIL SENT SUCCESSFULLY -->
-                            <h6 class="successContent">
-                                <i class="fa fa-check left" style="color: #5cb45d;"></i>Ваше сообщение успешно отправлено
-                            </h6>
-                            <!-- END IF MAIL SENT SUCCESSFULLY -->
-
-                            <!-- MAIL SENDING UNSUCCESSFULL -->
-                            <h6 class="errorContent">
-                                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Пожалуйста, проверьте правильность заполнения формы!
-                            </h6>
-                            <!-- END MAIL SENDING UNSUCCESSFULL -->
-
+                        <div class="contact-form" id="feedback" role="form" action="{% url 'feedback' %}">
                             <div class="form-field-wrapper">
                                 <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Ваше имя" required>
                             </div>
@@ -394,7 +333,7 @@
                             </div>
 
                             <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Отправить</button>
-                        </form>
+                        </div>
                         <!-- END Contact FORM -->
                     </div>
                 </div>
@@ -423,7 +362,7 @@
                             <div class="contact-icon-left"><i class="ion ion-ios-telephone"></i></div>
                             <h6>Телефон</h6>
                             <p>
-                                <span>1234567890</span><br />
+                                <span>1234567890, 9876543210</span><br />
                             </p>
                         </div>
                     </div>
@@ -445,10 +384,10 @@
         <!-- END CONTENT ---------------------------------------------------------------------------->
 
         <!-- FOOTER -->
-        <footer class="footer pt-80">
+        <footer class="footer">
 
             <!-- Copyright Bar -->
-            <section class="copyright pb-60">
+            <section class="copyright">
                 <div class="container">
                     <p class="">
                         &copy; 2015 <a href=""><b>Jazz Friends</b></a><br/>via Alexander Zhebrak

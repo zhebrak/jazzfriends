@@ -11,6 +11,7 @@ function init() {
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 15,
+        scrollwheel: false, //set to true to enable mouse scrolling while inside the map area
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(21.170240, 72.831061), // Surat
