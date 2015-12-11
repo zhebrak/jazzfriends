@@ -4,6 +4,7 @@ import json
 
 from datetime import datetime
 
+from django.conf import settings
 from django.shortcuts import render_to_response, HttpResponse
 from django.template.context import RequestContext
 
@@ -25,7 +26,8 @@ def index(request):
         'singers_list': singers_list,
         'photo_list': photo_list,
         'video_list': video_list,
-        'concert_item_width': int(100.0 / len(concert_list) - 5)
+        'concert_item_width': int(100.0 / len(concert_list) - 5),
+        'phone_list': settings.PHONE_LIST
     }
 
     return render_to_response(
