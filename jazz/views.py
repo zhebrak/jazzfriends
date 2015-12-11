@@ -4,11 +4,11 @@ import json
 
 from datetime import datetime
 
-from django.shortcuts import render_to_response, Http404
+from django.shortcuts import render_to_response, HttpResponse
 from django.template.context import RequestContext
 
 from jazz.forms import FeedbackForm
-from jazz.models import Concert, Attachment
+from jazz.models import Concert, Attachment, Video
 
 
 def index(request):
@@ -16,18 +16,15 @@ def index(request):
         show_time__gte=datetime.today()
     ).order_by('show_time')[:3]
 
-    singers_list = Attachment.objects.filter(
-        group='team'
-    ).order_by('?')
-
-    photo_list = Attachment.objects.filter(
-        group="photo"
-    ).order_by('?')
+    singers_list = Attachment.objects.filter(group='team').order_by('?')
+    photo_list = Attachment.objects.filter(group="photo").order_by('?')
+    video_list = Video.objects.order_by('?')[:3]
 
     context = {
         'concert_list': concert_list,
         'singers_list': singers_list,
         'photo_list': photo_list,
+        'video_list': video_list,
         'concert_item_width': int(100.0 / len(concert_list) - 5)
     }
 
@@ -37,19 +34,16 @@ def index(request):
 
 
 def feedback(request):
-    if request.method == 'POST':
-        form = FeedbackForm(request)
-        if form.is_valid():
-            form.save()
+    form = FeedbackForm(request.POST)
+    if form.is_valid():
+        form.save()
+        response = {
+            'response': 'OK'
+        }
+    else:
+        response = {
+            'response': 'Error',
+            'error': form._errors
+        }
 
-            result = 'OK'
-        else:
-            result = 'Error'
-
-        print result
-
-        return json.dumps({
-            'result': result
-        })
-
-    raise Http404
+    return HttpResponse(json.dumps(response))

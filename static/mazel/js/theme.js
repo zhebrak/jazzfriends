@@ -7,7 +7,7 @@
 
     $(window).load(function () {
         // ----------------------------------------------------------------------------------------------------------------------->
-        // SITE LOADER                     ||----------- 
+        // SITE LOADER                     ||-----------
         // ----------------------------------------------------------------------------------------------------------------------->
         $('#loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
@@ -18,7 +18,7 @@
 
 
     // ---------------------------------------------------------------------------------------------------------------------------->
-    // GENERAL SCRIPTS FOR ALL PAGES    ||----------- 
+    // GENERAL SCRIPTS FOR ALL PAGES    ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
@@ -32,7 +32,7 @@
         scroll();
         winResize();
         pushmenu();
-        pluginElement();
+        //pluginElement();
         sliderHero();
         sliderAll();
         containerGridMasonry();
@@ -210,13 +210,14 @@ function sliderAll() {
 
     // fullwidth Slider
     $('.fullwidth-slider').owlCarousel({
+        autoPlay: 7000,
         slideSpeed: 400,
+        //stopOnHover: true,
         singleItem: true,
         autoHeight: true,
         navigation: true,  // Show next and prev buttons
         pagination: true,  // Show pagination buttons
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        
     });
 
     // Image Slider
@@ -330,7 +331,7 @@ function sliderAll() {
 
     // Item-1 Carousel
     $('.item1-carousel').owlCarousel({
-        autoPlay: false,
+        autoPlay: 7000,
         autoHeight: true,
         stopOnHover: true,
         singleItem: true,
@@ -416,44 +417,44 @@ function sliderHero() {
 // ---------------------------------------------------------------------------------------------------------------------------->
 // PLUGIN MEDIA FUNCTIONS  ||-----------
 // ---------------------------------------------------------------------------------------------------------------------------->
-
-function pluginElement() {
-
-    // Media Player Elements
-    videoElement();
-    function videoElement() {
-        $('.video').mediaelementplayer({
-            loop: true,
-            enableKeyboard: false,
-            iPadUseNativeControls: false,
-            pauseOtherPlayers: false,
-            iPhoneUseNativeControls: false,
-            AndroidUseNativeControls: false,
-            enableAutosize: true
-        });
-        $('.bg-video').mediaelementplayer({
-            loop: true,
-            enableKeyboard: false,
-            iPadUseNativeControls: false,
-            pauseOtherPlayers: false,
-            iPhoneUseNativeControls: false,
-            AndroidUseNativeControls: false,
-            enableAutosize: true,
-            alwaysShowControls: false,
-        });
-
-        $('.audio').mediaelementplayer({
-            audioWidth: '100%',
-            pauseOtherPlayers: false,
-        });
-    };
-
-    // Responsive Media Elements
-    $(".video, .audio, .post-media, .post-media iframe").fitVids();
-
-
-
-};
+//
+//function pluginElement() {
+//
+//    // Media Player Elements
+//    videoElement();
+//    function videoElement() {
+//        $('.video').mediaelementplayer({
+//            loop: true,
+//            enableKeyboard: false,
+//            iPadUseNativeControls: false,
+//            pauseOtherPlayers: false,
+//            iPhoneUseNativeControls: false,
+//            AndroidUseNativeControls: false,
+//            enableAutosize: true
+//        });
+//        $('.bg-video').mediaelementplayer({
+//            loop: true,
+//            enableKeyboard: false,
+//            iPadUseNativeControls: false,
+//            pauseOtherPlayers: false,
+//            iPhoneUseNativeControls: false,
+//            AndroidUseNativeControls: false,
+//            enableAutosize: true,
+//            alwaysShowControls: false,
+//        });
+//
+//        $('.audio').mediaelementplayer({
+//            audioWidth: '100%',
+//            pauseOtherPlayers: false,
+//        });
+//    };
+//
+//    // Responsive Media Elements
+//    $(".video, .audio, .post-media, .post-media iframe").fitVids();
+//
+//
+//
+//};
 
 
 // ---------------------------------------------------------------------------------------------------------------------------->
@@ -476,7 +477,7 @@ function containerGridMasonry() {
                 },
             });
         });
-        
+
         // bind filter button click
         $('.container-filter').on('click', '.categories', function () {
             var filterValue = $(this).attr('data-filter');
@@ -652,21 +653,21 @@ function shortcodeElements() {
 
 
 // Accordion Function Elements
-accordion();
-function accordion() {
-
-    $('.accordion-title').click(function (e) {
-
-        $(this).next().slideToggle('easeOut');
-        $(this).toggleClass('active');
-        $("accordion-title").toggleClass('active');
-        $(".accordion-content").not($(this).next()).slideUp('easeIn');
-        $(".accordion-title").not($(this)).removeClass('active');
-
-    });
-    $(".accordion-content").addClass("defualt-hidden");
-
-};
+//accordion();
+//function accordion() {
+//
+//    $('.accordion-title').click(function (e) {
+//
+//        $(this).next().slideToggle('easeOut');
+//        $(this).toggleClass('active');
+//        $("accordion-title").toggleClass('active');
+//        $(".accordion-content").not($(this).next()).slideUp('easeIn');
+//        $(".accordion-title").not($(this)).removeClass('active');
+//
+//    });
+//    $(".accordion-content").addClass("defualt-hidden");
+//
+//};
 
 // Jquery UI Elements
 jqueryUi();

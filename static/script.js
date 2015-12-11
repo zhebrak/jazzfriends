@@ -1,17 +1,34 @@
 $(document).ready(function(){
 
-    function nextSlide() {
-        var active = $('.owl-pagination .active').first();
-        console.log(active.next());
+    $('#form-submit').on('click', function() {
+        $.ajax({
+            method: 'POST',
+            url: '/feedback/',
+            data: {
+                'csrfmiddlewaretoken': $('.contact-form input[name=csrfmiddlewaretoken]').val(),
+                'name': $('#form-name').val(),
+                'contact': $('#form-contact').val(),
+                'message': $('#form-message').val()
+            },
+            dataType: "json",
+            success: function(data) {
+                var message = $('#contact-message');
+                message.css('display', 'block');
+                if (data['response'] == 'OK') {
+                    $('#feedback').css('display', 'none');
+                    message.html('<h5>Спасибо за сообщение, мы скоро ответим вам!</h5>')
+                } else {
+                    message.text('Пожалуйста, заполните все поля.')
+                }
 
-        if (active.next().length) {
-            console.log(active.next('.owl-page').first());
-            active.next('.owl-page').first().find('span').click();
-        } else {
-            $('.owl-pagination .owl-page').first().find('span').click();
-        }
-    }
+            }
+        })
+    });
 
-    setTimeout(nextSlide, 5000);
+
+    var photoCarousel = $('.photo .owl-carousel');
+    $('.photo .item img').on('click', function() {
+       photoCarousel.trigger('owl.next');
+    });
 
 });

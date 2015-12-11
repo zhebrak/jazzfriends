@@ -8,6 +8,19 @@
     font-weight: bold;
 }
 
+#concert {
+    margin-bottom: 70px;
+}
+
+#video, #about, #we, #photo, #contact {
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
+
+.contact-section {
+    padding-bottom: 70px;
+}
+
 .concert {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -38,15 +51,11 @@
     vertical-align: middle;
 }
 
-#we {
-    padding-top: 20px;
-}
-
-#we .lead {
+.we .lead {
     font-size: 20px;
 }
 
-#we p {
+.we p {
     font-size: 16px;
 }
 
@@ -62,22 +71,26 @@
     color: #e6ae49;
 }
 
-#photo {
+.photo {
     text-align: center;
     padding-top: 20px;
 }
 
-#photo img {
+.photo img {
     height: 630px;
 }
 
-#photo .photo-title {
+.photo .photo-title {
     font-size: 18px;
     margin-top: 10px;
 }
 
-#contact-info, #contact {
+#contact-info {
     padding-top: 20px;
+}
+
+#contact-message {
+    text-align: center;
 }
 
 .copyright {

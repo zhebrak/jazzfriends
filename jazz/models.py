@@ -17,6 +17,19 @@ class Concert(models.Model):
         ordering = ('-show_time',)
 
 
+class Video(models.Model):
+    title = models.CharField(max_length=100, blank=True, verbose_name=u'название')
+    location = models.CharField(max_length=200, verbose_name=u'место')
+    show_date = models.DateField(verbose_name=u'дата')
+
+    embed_link = models.CharField(max_length=100, verbose_name=u'ссылка на видео')
+
+    class Meta:
+        verbose_name = u'Видео'
+        verbose_name_plural = u'Видео'
+        ordering = ('-show_date',)
+
+
 class Attachment(models.Model):
     IMAGE = 0
     type_choices = (
