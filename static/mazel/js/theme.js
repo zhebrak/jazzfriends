@@ -599,22 +599,22 @@ function shortcodeElements() {
 
 
     // Portfolio Lightbox Popup Elements
-    lightbox();
-    function lightbox() {
-        $(".cbox-gallary1").colorbox({
-            rel: 'gallary',
-            maxWidth: "95%",
-            maxHeight: "95%"
-
-        });
-        $(".cbox-iframe").colorbox({
-            iframe: true,
-            maxWidth: "95%",
-            maxHeight: "95%",
-            innerWidth: 640,
-            innerHeight: 390
-        });
-    };
+    //lightbox();
+    //function lightbox() {
+    //    $(".cbox-gallary1").colorbox({
+    //        rel: 'gallary',
+    //        maxWidth: "95%",
+    //        maxHeight: "95%"
+    //
+    //    });
+    //    $(".cbox-iframe").colorbox({
+    //        iframe: true,
+    //        maxWidth: "95%",
+    //        maxHeight: "95%",
+    //        innerWidth: 640,
+    //        innerHeight: 390
+    //    });
+    //};
 
     // Skills Progressbar Elements
     skillsProgressBar();

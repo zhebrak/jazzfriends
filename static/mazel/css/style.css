@@ -1,20 +1,20 @@
-﻿@import url("navigation.css");
-@import url("./plugin/flexslider.css");
-@import url("./plugin/owl.carousel.css");
-@import url("./plugin/mediaelementplayer.css");
-@import url("./plugin/colorbox.css");
-@import url("./plugin/jquery.fs.tipper.css");
+﻿/*@import url("navigation.css");*/
+/*@import url("./plugin/flexslider.css");*/
+/*@import url("./plugin/owl.carousel.css");*/
+/*@import url("./plugin/mediaelementplayer.css");*/
+/*@import url("./plugin/colorbox.css");*/
+/*@import url("./plugin/jquery.fs.tipper.css");*/
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Navigation Menu
   - Right Side Menu Button (Search, Cart, Bar, etc)
@@ -32,7 +32,7 @@
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style (Top, Bottom, Left, right)
   - Contents (Body, Container, Section, etc)
@@ -2063,7 +2063,7 @@ header.sticky .navigation a.current-ele {
 
     .side-menu .social {
         list-style:none;
-       
+
     }
         .side-menu .social li {
             display:inline-block;
