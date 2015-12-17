@@ -77,7 +77,10 @@
 }
 
 .photo img {
-    height: 630px;
+    height: 80vh;
+    max-height: 595px;
+    min-height: 200px;
+    min-width: 475px;
 }
 
 .photo .photo-title {
