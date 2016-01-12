@@ -1,11 +1,18 @@
 .header .logo a, .header.sticky .logo a {
-    width: 300px;
+    vertical-align: middle;
+    width: 250px;
 }
 
 .text-logo {
-    width: 300px;
     font-size: 30px;
     font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .header .logo a {
+        color: #323232;
+    }
 }
 
 #concert {
@@ -76,12 +83,6 @@
     padding-top: 20px;
 }
 
-.photo img {
-    height: 80vh;
-    max-height: 595px;
-    min-height: 200px;
-    min-width: 475px;
-}
 
 .photo .photo-title {
     font-size: 18px;
