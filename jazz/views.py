@@ -23,7 +23,7 @@ def index(request):
 
     concert_item_width = None
     if concert_list:
-        concert_item_width = int(100.0 / len(concert_list)) - 5,
+        concert_item_width = int(100.0 / len(concert_list)) - 5
 
     context = {
         'concert_list': concert_list,
