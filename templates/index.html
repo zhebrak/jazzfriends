@@ -201,7 +201,7 @@
                 <div class="container text-center">
                     <h3>Концерты</h3>
                     {% for concert in concert_list %}
-                        <div class="concert-item" style="width: {{ concert_item_width }}%;">
+                        <div class="concert-item">
                             <div class="concert-info-block">
                                 <div class="concert-time">
                                     <h4>{{ concert.show_time|date:"d / m / H:i" }}</h4>
@@ -246,6 +246,9 @@
                             </div>
                         </div>
                     {% endfor %}
+                </div>
+                <div class="youtube-channel">
+                    <h6><a target="_blank" href="https://youtube.com/channel/UCgGUvVey6OVSkKxu0YVj8UQ/">Наш канал на YouTube</a></h6>
                 </div>
             </div>
         </section>
@@ -377,6 +380,13 @@
 
         <!-- FOOTER -->
         <footer class="footer">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-xs-12">
+                <ul class="social">
+                    <li><a target="_blank" href="https://vk.com/jazzfriendschoir"><i class="fa fa-vk"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/jazzfriendschoir/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://youtube.com/channel/UCgGUvVey6OVSkKxu0YVj8UQ/"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
 
             <!-- Copyright Bar -->
             <section class="copyright">

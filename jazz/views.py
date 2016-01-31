@@ -21,16 +21,11 @@ def index(request):
     photo_list = Attachment.objects.filter(group="photo").order_by('?')
     video_list = Video.objects.order_by('?')[:3]
 
-    concert_item_width = None
-    if concert_list:
-        concert_item_width = int(100.0 / len(concert_list)) - 5  # please move it to js...
-
     context = {
         'concert_list': concert_list,
         'singers_list': singers_list,
         'photo_list': photo_list,
         'video_list': video_list,
-        'concert_item_width': concert_item_width,
         'phone_list': settings.PHONE_LIST
     }
 

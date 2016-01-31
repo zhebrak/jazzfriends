@@ -31,4 +31,11 @@ $(document).ready(function(){
        photoCarousel.trigger('owl.next');
     });
 
+    var concerts = $('.concert-item');
+    if ( concerts.length ) {
+        console.log(100 / concerts.length - 5);
+        concerts.css('width', 100 / concerts.length - 5 + '%');
+    }
+
+
 });
