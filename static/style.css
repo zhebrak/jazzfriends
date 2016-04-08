@@ -44,7 +44,9 @@
 .concert-item {
     display: inline-block;
     width: 30%;
+    min-width: 150px;
     vertical-align: top;
+    margin-top: 20px;
 }
 
 .concert-image {
